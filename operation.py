@@ -75,11 +75,11 @@ def compressproblem(alarminfo):
             hostinfo=host['triggernseverity']+':'+host['hostname']+'\n'
             hostlist+=hostinfo
         # 同类报警 数量在3-6间
-        if infonum >= 1 and infonum <= 10:
+        if infonum >= 1 and infonum <= 6:
             message='告警主机:'+str(infonum)+'台\n'+hostlist+'告警项目:'+triggername+'\n'+'分析时间:'+currenttime
             messagelist.append(message)
         # 同类报警 数量超过6
-        elif infonum > 10:
+        elif infonum > 6:
             message='大量告警主机:'+str(infonum)+'台\n'+'告警项目:'+triggername+'\n'+'分析时间:'+currenttime
             messagelist.append(message)
     return messagelist
@@ -96,7 +96,7 @@ def compressnormal(alarminfo):
             triggername=host['triggername']
             hostinfo=host['triggernseverity']+':'+host['hostname']+'\n'
             hostlist+=hostinfo
-        if infonum >= 3 and infonum <= 6:
+        if infonum >= 1 and infonum <= 6:
             message='恢复主机:'+str(infonum)+'台\n'+hostlist+'告警项目:'+triggername+'\n'+'分析时间:'+currenttime
             messagelist.append(message)
         elif infonum > 6:

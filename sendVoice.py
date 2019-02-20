@@ -3,7 +3,7 @@ import requests
 import json
 
 
-
+# 电话通知告警
 def send_tel(tel):
     resp = requests.post(("http://voice-api.luosimao.com/v1/verify.json"),
     auth = ("api", "key-9283abe61c47499ae22c193752ed304d"),
@@ -15,5 +15,5 @@ def send_tel(tel):
     verify = False
     )
     result = json.loads(resp.content)
-    print result
+    # print result
 

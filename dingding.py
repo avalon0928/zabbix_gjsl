@@ -8,7 +8,7 @@ import sys
 import os
 
 
-
+# 发送收敛告警信息到钉钉
 def msg(text):
     headers = {'Content-Type': 'application/json;charset=utf-8'}
     api_url = "https://oapi.dingtalk.com/robot/send?access_token=f1235c352e3f2aae15c3e72ad8fd4f3a8eec0a956149cfb6862393842acd3db2"
