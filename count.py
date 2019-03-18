@@ -53,9 +53,3 @@ print("查询时间范围：%s - %s" % (a, b))
 print("报警条数：%s" % alert_count(redisid, clock(a), clock(b)))
 print("电话报警条数：%s" % alert_count(telid, clock(a), clock(b)))
 print("告警收敛后报警条数：%s" % dd_count(a, b))
-
-# redisid = 8
-# telid = 2
-
-
-print("查询时间范围：%s - %s" % (a, b))
