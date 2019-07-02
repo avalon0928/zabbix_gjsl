@@ -42,8 +42,8 @@ if len(messagelist) != 0:
     for content in messagelist:
         msg(content)
         if "北汽" in content:
-            send_tel(17521573073)   #丁亚运
-            send_tel(18071091691)
+            send_tel(12345678901)
+            send_tel(12345678901)
 
 #发送恢复信息
 messagelist=compressnormal(normal)
